@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader.hide {
+  opacity: 0;
+  display: none;
+}
+
+.preloader-inner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.preloader-spinner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation Bar  */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin-right: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  transition: color 0.2s;
+}
+
+.navbar-nav li a:hover {
+  color: #007bff;
+}
+
+.navbar-search input[type="text"] {
+  width: 224px;
+  height: 40px;
+  border-radius: 12px;
+  padding: 8px;
+  background: rgba(237, 238, 242, 1);
+}
+
+.navbar-search button[type="submit"] {
+  color: #000;
+  font-size: 16px;
+  margin-left: -30px;
+  cursor: pointer;
+  border: none;
+}
+
+.navbar-imgs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.navbar-imgs a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navbar-imgs a:hover {
+  color: #007bff;
+}
+
+.navbar-icons img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav li {
+    margin: 10px 0;
+  }
+
+  .navbar-search {
+    margin-top: 10px;
+  } 
+
+  .navbar-search input[type="text"] {
+    width: 100%;
+  }
+
+  .navbar-search button[type="submit"] {
+    margin-left: 0;
+  }
+
+  .navbar-imgs {
+    margin-top: 10px;
+  }
+
+  #menu-open:checked + .navbar-collapse {
+    display: flex;
+  }
+}
+/* Navigation Bar  */
+
+/* Post Section  */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.post-title {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post-date {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.post-excerpt {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.post-read-more {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+}
