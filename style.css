@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  min-height: 100vh;
+  background: linear-gradient(36deg, #e8e8e8, #dfdfdf);
+  color: #2e2e2e;
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -125,10 +129,10 @@
   border: none;
 }
 
-.navbar-imgs{
+.navbar-imgs {
   display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .navbar-imgs a {
@@ -180,7 +184,7 @@
 
   .navbar-search {
     margin-top: 10px;
-  } 
+  }
 
   .navbar-search input[type="text"] {
     width: 100%;
@@ -201,54 +205,31 @@
 /* Navigation Bar  */
 
 /* Post Section  */
-.post-card {
+.deserts {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.desert_card {
+  cursor: pointer;
+  width: 540px;
+  height: 188px;
+  border-radius: 16px;
+  background-color: rgba(243, 244, 255, 1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.desert_card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.desert_card_title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-
-.post-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.post-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.post-title {
-  margin: 20px 0 0 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.post-date {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-  color: #999;
-}
-
-.post-excerpt {
-  margin: 10px 0 0 0;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 10px;
-}
-
-.post-read-more {
-  display: inline-block;
-  margin: 20px 0;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-  background-color: #333;
-  border-radius: 5px;
+.desert_card h3 {
+  color: #2b2b43;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.1px;
+  font-family: "Nunito", sans-serif;
 }
