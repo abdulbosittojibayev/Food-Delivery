@@ -82,11 +82,12 @@ body {
 }
 
 .navbar-collapse {
+  height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
-  padding: 40px;
+  border-bottom: 1px solid #dddddd;
 }
 
 .navbar-nav {
@@ -163,16 +164,7 @@ body {
   border-radius: 50%;
   margin-right: 20px;
 }
-
-/* Navigation Bar  */
-
-/* Post Section  */
-/* .deserts {
-  display: flex;
-  padding: 20px 30px;
-  align-items: center;
-  justify-content: space-around;
-} */
+/* Deserts */
 .deserts {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +172,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 10px 30px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .desert_card {
   cursor: pointer;
@@ -204,8 +196,7 @@ body {
 }
 /* Menu  */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -216,7 +207,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .menu_items {
@@ -229,6 +220,7 @@ body {
   border: #edeef2 1px solid;
   transition: all 0.2s ease;
   border-radius: 13px;
+  margin: 0px 10px;
 }
 .menu_items img {
   width: 24px;
