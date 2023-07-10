@@ -8,6 +8,10 @@ body {
   min-height: 100vh;
   background: linear-gradient(36deg, #e8e8e8, #dfdfdf);
   color: #2e2e2e;
+
+}
+.wrapper {
+  width: 100%;
 }
 .preloader {
   position: fixed;
@@ -217,9 +221,10 @@ body {
   height: 188px;
   border-radius: 16px;
   background-color: rgba(243, 244, 255, 1);
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.desert_card:hover{
+.desert_card:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .desert_card_title {
@@ -233,3 +238,92 @@ body {
   letter-spacing: 0.1px;
   font-family: "Nunito", sans-serif;
 }
+/* Menu  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.menu {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 180px;
+  height: 90px;
+  border: #bcbcbc 1px solid;
+
+  border-radius: 13px;
+}
+.menu_items img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.menu_items:hover {
+  background-color: #f0f2fd;
+  transition: 0.4s;
+  border: #0093ee 2px solid;
+}
+/* Posts  */
+.feature {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.object {
+  width: 350px;
+  height: 280px;
+  margin-top: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 13px;
+  border: #bcbcbc 1px solid;
+}
+
+.post_img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.post_title {
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_title p {
+  color: rgb(152, 152, 152);
+}
+.sushi {
+  margin-left: 4%;
+  border-radius: 10px;
+  width: 75px;
+  height: 23px;
+  cursor: pointer;
+  border: 1px solid #edeef2;
+  font-size: 12px;
+  background: #edeef2;
+}
+.sushi:hover {
+  background-color: #f0f2fd;
+}
+/* Posts  */
