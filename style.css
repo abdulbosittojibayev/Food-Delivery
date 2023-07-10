@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   background: linear-gradient(36deg, #e8e8e8, #dfdfdf);
   color: #2e2e2e;
-
 }
 .wrapper {
   width: 100%;
@@ -209,11 +208,19 @@ body {
 /* Navigation Bar  */
 
 /* Post Section  */
-.deserts {
+/* .deserts {
   display: flex;
   padding: 20px 30px;
   align-items: center;
   justify-content: space-around;
+} */
+.deserts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  padding-top: 10px;
 }
 .desert_card {
   cursor: pointer;
